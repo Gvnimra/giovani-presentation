@@ -1,0 +1,86 @@
+/* Reset Básico */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0f0f0f;
+  color: #eee;
+  scroll-behavior: smooth;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Fonte importada do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.logo {
+  font-family: 'Orbitron', monospace;
+}
+
+
+/* HEADER */
+
+.header{
+  width: 100%;
+  padding: 20px 40px;
+  background: #111;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.header .container{
+  max-width: 1100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo{
+  font-size: 28px;
+  font-weight: bold;
+  color: #eee;
+  font-family: 'Orbitron', monospace;
+  
+}
+
+.menu a{
+  margin-left: 20px;
+  font-size: 16px;
+  color: #ccc;
+  transform: 0.3s ease;
+}
+
+.menu a:hover{
+  color: #eee;
+  
+  
+}
+
+
+
