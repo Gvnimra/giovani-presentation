@@ -15,4 +15,4 @@ scrollReveal();
 document.addEventListener("scroll", () => {
   const offset = window.scrollY * 0.3; // velocidade do parallax
   document.querySelector(".hero").style.setProperty("--parallax", `${offset}px`);
-});
+});                                                    
