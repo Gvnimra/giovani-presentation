@@ -1,5 +1,6 @@
 const elements = document.querySelectorAll('.fade-in');
 
+// Efeito de Parallax 
 function scrollReveal() {
   elements.forEach(el => {
     const rect = el.getBoundingClientRect();
