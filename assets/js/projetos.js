@@ -25,9 +25,30 @@
       imagem: "assets/img/img_teste3.jpg",
       link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
 
-    }
+    },
 
-    
+    {
+      titulo: "Projeto 4",
+      descricao: "Projetos em andamento, em breve eu colocarei eles aqui",
+      imagem: "assets/img/img_teste1.jpg",
+      link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
+
+    },
+
+    {
+      titulo: "Projeto 5",
+      descricao: "Projetos em andamento, em breve eu colocarei eles aqui",
+      imagem: "assets/img/img_teste2.jpg",
+      link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
+
+    },
+    {
+      titulo: "Projeto 6",
+      descricao: "Projetos em andamento, em breve eu colocarei eles aqui",
+      imagem: "assets/img/img_teste3.jpg",
+      link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
+
+    },
 
     // => Conforme novos projetos forem criados ou atualizados, é só copiar o objeto e atualizar os campos.
   ];
