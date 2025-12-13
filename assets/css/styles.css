@@ -236,6 +236,15 @@ a{
   
 }
 
+.skills-text{
+  max-width: 600px;
+  margin: 0 auto 40px;
+  text-align: center;
+  font-size: 1rem;
+  color: #bbb;
+  line-height: 1.6;
+}
+
 .skill-list{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -286,6 +295,14 @@ a{
   padding: 4rem 2rem;
 }
 
+.projetos-text{
+  max-width: 600px;
+  margin: 0 auto 40px;
+  text-align: center;
+  font-size: 1rem;
+  color: #bbb;
+  line-height: 1.6;
+}
 
 #container-projetos {
   max-width: 1200px;
