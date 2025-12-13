@@ -25,9 +25,11 @@
       imagem: "assets/img/img_teste3.jpg",
       link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
 
-      // => Conforme novos projetos forem criados ou atualizados, é só copiar o objeto e atualizar os campos.
-
     }
+
+    
+
+    // => Conforme novos projetos forem criados ou atualizados, é só copiar o objeto e atualizar os campos.
   ];
 
   // 2 - Função que cria um card DOM a partir de um objeto projeto 

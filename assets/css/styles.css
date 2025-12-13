@@ -359,6 +359,53 @@ body {
 }
 
 
+/* FOOTER */
+
+/* FOOTER */
+
+.footer {
+  background: #111;
+  padding: 60px 20px 40px;
+  border-top: 1px solid #1f1f1f;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.footer-links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-links a {
+  font-size: 0.95rem;
+  color: #aaa;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-copy {
+  font-size: 0.8rem;
+  color: #777;
+}
+
 
 /* ------------------------------------------------------------------------------- */
 .fade-in{
