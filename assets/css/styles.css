@@ -8,7 +8,8 @@
 
 html, body {
   height: 100%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
   background-color: #0f0f0f;
   color: #eee;
   scroll-behavior: smooth;
@@ -23,16 +24,38 @@ a{
   color: inherit;
 }
 
-/* Fonte importada do Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+.section {
+  padding: 120px 0;
+}
 
-body {
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+.container{
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+                                                                    
+.section-title{
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin:0 0 40px;
+  font-family: 'Inter', sans-serif;
+}
+
+.section-title::after{
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #4ade80;
+  margin: 0.75rem auto 0;
+  border-radius: 2px;
 }
 
 /* LOGO */
 .logo {
-  font-family: 'Orbitron', monospace;
+  font-family: 'Inter', monospace;
   font-size: 28px;
   font-weight: bold;
   color: #eee;
@@ -103,7 +126,6 @@ body {
   position:absolute;
   inset: 0;
   background: url('../img/Coding.jpg') center/cover no-repeat;
-  transform: translateY(0);
   z-index: -2;
   will-change: transform;
   transform: translateY(var(--parallax));
@@ -119,8 +141,6 @@ body {
 }
 
 .hero .container {
-  max-width: 1200px;
-  width: 90%;
   position: relative;
   z-index: 2;
   animation: fadeHero 1.2s ease-out forwards;
@@ -157,7 +177,7 @@ body {
   border-radius: 6px;
   font-size: 16px;
   font-weight: bold;
-  transition: 0.3 ease;
+  transition: background 0.3s ease;
 }
 
 .hero .btn:hover{
@@ -174,9 +194,6 @@ body {
 }
 
 .sobre .container{
-  max-width: 1200px;
-  width: 90%;
-  margin: 0 auto;
   display: flex;
   gap: 40px;
   align-items: center;
@@ -196,9 +213,8 @@ body {
 }
 
 .sobre-texto h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  font-family: 'Orbitron', sans-serif;
+  
+  font-family: 'Inter', sans-serif;
 }
 
 .sobre-texto p{
@@ -211,20 +227,13 @@ body {
 /* SKILLS */ 
 
 .skills{
-  padding: 120px 0;
+  padding: 140px 0;
   background: #111;
 }
 
-.skills .container{
-  max-width: 1100px;
-  width: 90%;
-  margin: 0 auto;
-}
-
 .skills h2{
-  font-size: 36px;
   text-align: center;
-  margin-bottom: 40px;
+  
 }
 
 .skill-list{
@@ -239,21 +248,21 @@ body {
   border-radius: 10px;
   text-align: center;
   font-size: 18px;
-  box-shadow: 0 4px rgba(0, 0, 0, 0.3);
-  transition: 0.3 ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .skill-item:hover{
   transform: translateY(-4px);
-  background: #222;
-}
+  background: #222; 
+}                              
 
 .skill-icon {
   width: 60px;
   height: 60px;
   margin-bottom: 10px;
   filter: brightness(0.9);
-  transition: 0.3 ease;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .skill-item:hover .skill-icon{
@@ -271,25 +280,21 @@ body {
   margin-left: 6px;
   letter-spacing: 0.5px;
 }
-
+                                                    
 /* PROJETOS */
 .projetos{
   padding: 4rem 2rem;
 }
 
-.projetos h2{
-  font-size: 36px;
-  text-align: center;
-  margin-bottom: 40px;
-  font-family: 'Orbitron', sans-serif;
-}
+
 #container-projetos {
   max-width: 1200px;
-  margin: 0 auto;
+  margin:0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   padding: 2rem 0;
+  
 }
 
 .empty-msg {
@@ -351,15 +356,12 @@ body {
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600; 
-  transition: background 0.2 ease;
+  transition: background 0.2s ease;
 }
 
 .btn-projeto:hover {
   background: #0073d6;
 }
-
-
-/* FOOTER */
 
 /* FOOTER */
 
@@ -370,9 +372,7 @@ body {
 }
 
 .footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -406,7 +406,6 @@ body {
   color: #777;
 }
 
-
 /* ------------------------------------------------------------------------------- */
 .fade-in{
   opacity: 0;
@@ -422,3 +421,4 @@ body {
     transform: translateY(0);
   }
 }
+                                               
