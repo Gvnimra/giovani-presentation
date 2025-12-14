@@ -1,7 +1,6 @@
 const elements = document.querySelectorAll('.fade-in');
 
 
-
 // Efeito de Parallax 
 function scrollReveal() {
   elements.forEach(el => {
@@ -37,5 +36,36 @@ backToTop.addEventListener('click', () => {
     top: 0,
     behavior: 'smooth'
   })
-})
+});
+
+// Scroll Spy 
+
+const sections = document.querySelectorAll("section[id]");
+const navLinks = document.querySelectorAll(".menu a");
+
+window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY;
+
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 120;
+    const sectionHeight = section.offsetHeight;
+    const sectionId = section.getAttribute("id");
+
+    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+      navLinks.forEach(link => link.classList.remove("active"));
+
+      const activeLink = document.querySelector(
+        `.menu a[href="#${sectionId}"]`
+      );
+
+      if (activeLink){
+        activeLink.classList.add("active");
+      }
+    } 
+  });
+});
+
+
+
+
 
