@@ -5,48 +5,48 @@
 
   const projetos = [
     {
-      titulo: "Projeto 1",
+      titulo: "Em breve",
       descricao: "Projetos em andamento, em breve eu colocarei eles aqui",
-      imagem: "assets/img/img_teste1.jpg",
-      link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
+      imagem: "assets/img/project_template.png",
+      link: "https://github.com/Gvnimra" 
 
     },
 
     {
-      titulo: "Projeto 2",
+      titulo: "Em breve",
       descricao: "Projetos em andamento, em breve eu colocarei eles aqui",
-      imagem: "assets/img/img_teste2.jpg",
-      link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
+      imagem: "assets/img/project_template.png",
+      link: "https://github.com/Gvnimra" 
 
     },
     {
-      titulo: "Projeto 3",
+      titulo: "Em breve",
       descricao: "Projetos em andamento, em breve eu colocarei eles aqui",
-      imagem: "assets/img/img_teste3.jpg",
-      link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
-
-    },
-
-    {
-      titulo: "Projeto 4",
-      descricao: "Projetos em andamento, em breve eu colocarei eles aqui",
-      imagem: "assets/img/img_teste1.jpg",
-      link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
+      imagem: "assets/img/project_template.png",
+      link: "https://github.com/Gvnimra" 
 
     },
 
     {
-      titulo: "Projeto 5",
+      titulo: "Em breve",
       descricao: "Projetos em andamento, em breve eu colocarei eles aqui",
-      imagem: "assets/img/img_teste2.jpg",
-      link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
+      imagem: "assets/img/project_template.png",
+      link: "https://github.com/Gvnimra" 
+
+    },
+
+    {
+      titulo: "Em breve",
+      descricao: "Projetos em andamento, em breve eu colocarei eles aqui",
+      imagem: "assets/img/project_template.png",
+      link: "https://github.com/Gvnimra" 
 
     },
     {
-      titulo: "Projeto 6",
+      titulo: "Em breve",
       descricao: "Projetos em andamento, em breve eu colocarei eles aqui",
-      imagem: "assets/img/img_teste3.jpg",
-      link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
+      imagem: "assets/img/project_template.png",
+      link: "https://github.com/Gvnimra" 
 
     },
 

@@ -562,4 +562,266 @@ a{
     transform: translateY(0);
   }
 }
-                                               
+   
+/* =====================================================
+   RESPONSIVIDADE
+===================================================== */
+
+@media (max-width: 1024px) {}
+
+
+@media (max-width: 768px) {
+  .header{
+    padding: 16px 20px;
+  }
+
+  .header .container {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .menu a {
+    margin-left: 0;
+    margin: 0 12px;
+    font-size: 15px;
+  }
+
+  .hero h1{
+    font-size: 32px;
+  }
+
+  .hero p{
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .sobre {
+    padding: 80px 0;
+  }
+
+  .sobre .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sobre img {
+    width: 220px;
+    margin-bottom: 20px;
+  }
+
+  .sobre-texto p {
+    font-size: 16px;
+  }
+
+   .skills {
+    padding: 100px 0;
+  }
+
+  .skill-list {
+    gap: 20px;
+  }
+
+  .skill-item {
+    padding: 16px;
+  }
+
+   .projetos {
+    padding: 80px 20px;
+  }
+
+  #container-projetos {
+    gap: 1.5rem;
+  }
+
+   .footer {
+    padding: 30px 20px;
+  }
+
+  .footer-text {
+    font-size: 0.95rem;
+  }
+
+  .skill-item,
+  .card-projeto,
+  .contato-links a {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .skill-item:hover,
+  .card-projeto:hover,
+  .contato-links a:hover {
+    transform: translateY(-2px);
+  }
+  
+}
+
+@media (max-width: 480px) {
+
+  .container {
+    width: 92%;
+  }
+
+  .header {
+    padding: 16px 20px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 100px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero .btn {
+    padding: 12px 24px;
+    font-size: 15px;
+  }
+
+  .section-title {
+    font-size: 1.7rem;
+    margin-bottom: 30px;
+  }
+
+  .sobre {
+    padding: 70px 0;
+  }
+
+  .sobre img {
+    width: 200px;
+  }
+
+  .sobre-texto p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .skills {
+    padding: 90px 0;
+  }
+
+  .skills-text {
+    font-size: 0.95rem;
+  }
+
+  .skill-item {
+    padding: 14px;
+    font-size: 16px;
+  }
+
+  .skill-item {
+    transition: transform 0.15s ease, background 0.15s ease;
+  }
+
+  .skill-item:active {
+    transform: scale(0.96);
+    background: #222;
+  }
+
+  .skill-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .projetos {
+    padding: 70px 16px;
+  }
+
+  .projetos-text {
+    font-size: 0.95rem;
+  }
+
+  .card-body h3 {
+    font-size: 1.1rem;
+  }
+
+  .card-body p {
+    font-size: 0.9rem;
+  }
+
+  .card-projeto {
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .card-projeto:active {
+    transform: scale(0.97);
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.6);
+  }
+
+  .btn-projeto {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .contato {
+    min-height: 65vh;
+    padding: 50px 16px;
+  }
+
+  .contato-text {
+    font-size: 0.95rem;
+  }
+
+   .contato-links {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: stretch;
+  }
+
+  .contato-links a {
+    width: 100%;
+    justify-content: center;
+    padding: 14px;
+    font-size: 0.95rem;
+    border-radius: 10px;
+    transition: transform 0.15s ease, background 0.15s ease;
+  }
+
+  .contato-links a:active {
+    transform: scale(0.96);
+    background: #222;
+  }
+
+  .footer {
+    padding: 30px 16px;
+  }
+
+  .footer-text {
+    font-size: 0.9rem;
+  }
+
+  .footer-copy {
+    font-size: 0.75rem;
+  }
+
+  /* BACK TO TOP */
+  .back-to-top {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    bottom: 20px;
+    right: 20px;
+  }
+
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .skill-item:hover,
+  .card-projeto:hover,
+  .contato-links a:hover {
+    transform: translateY(-4px);
+  }
+}
