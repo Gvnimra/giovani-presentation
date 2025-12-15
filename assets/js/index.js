@@ -1,8 +1,11 @@
 const elements = document.querySelectorAll('.fade-in');
+const backToTop = document.getElementById('backToTop'); 
+
+const hero = document.querySelector(".hero");
 
 
-// Efeito de Parallax 
-function scrollReveal() {
+// Fade-in (Scroll Reveal)
+function handleScrollReveal() {
   elements.forEach(el => {
     const rect = el.getBoundingClientRect();
     if (rect.top < window.innerHeight - 100) {
@@ -11,58 +14,76 @@ function scrollReveal() {
   });
 }
 
-window.addEventListener('scroll', scrollReveal);
-scrollReveal();
+//Parallax 
+function handleParallax(){
+  if(!hero) return;
 
-document.addEventListener("scroll", () => {
-  const offset = window.scrollY * 0.3; // velocidade do parallax
-  document.querySelector(".hero").style.setProperty("--parallax", `${offset}px`);
-});               
+  const offset = window.scrollY * 0.3;
+  hero.style.setProperty('--parallax', `${offset}px`);
+}
 
 // Botão back-to-top
 
-const backToTop = document.getElementById('backToTop'); 
-
-window.addEventListener('scroll', () => {
+function handleBackToTop() {
   if(window.scrollY > 300) {
     backToTop.classList.add('show');
   } else {
     backToTop.classList.remove('show');
   }
-});
 
-backToTop.addEventListener('click', () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  })
-});
+}
 
 // Scroll Spy 
 
-const sections = document.querySelectorAll("section[id]");
+const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll(".menu a");
 
-window.addEventListener("scroll", () => {
+function handleScrollSpy(){
+  if(!sections.length || !navLinks.length) return;
+
   const scrollY = window.scrollY;
 
   sections.forEach(section => {
-    const sectionTop = section.offsetTop - 120;
+    const sectionTop = section.offsetTop - 140;
     const sectionHeight = section.offsetHeight;
-    const sectionId = section.getAttribute("id");
+    const sectionId = section.getAttribute('id');
 
-    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-      navLinks.forEach(link => link.classList.remove("active"));
+    if(scrollY >= sectionTop && scrollY < sectionTop + sectionHeight){
+      navLinks.forEach(link => link.classList.remove('active'));
 
       const activeLink = document.querySelector(
         `.menu a[href="#${sectionId}"]`
       );
 
-      if (activeLink){
-        activeLink.classList.add("active");
+      if (activeLink) {
+        activeLink.classList.add('active');
       }
-    } 
+    }
   });
+}
+
+// Scroll Handler 
+
+function onScroll(){
+  handleScrollReveal();
+  handleParallax();
+  handleBackToTop();
+  handleScrollSpy();
+}
+
+window.addEventListener('scroll', onScroll);
+
+document.addEventListener('DOMContentLoaded', () => {
+  onScroll();
+
+  if(backToTop){
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  }
 });
 
 
