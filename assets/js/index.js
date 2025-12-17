@@ -102,7 +102,7 @@ const menuLinks = document.querySelectorAll('.menu a');
 
 menuLinks.forEach(link => {
   link.addEventListener('click', () => {
-    console.log('clicou');
+    
     menu.classList.remove('active');
     menuToggle.classList.remove('active')
   });
