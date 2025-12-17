@@ -86,6 +86,27 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+//Menu Hamburguer
+
+const menuToggle = document.getElementById('menuToggle');
+const menu = document.getElementById('menu');
+
+console.log(menuToggle, menu);
+
+menuToggle.addEventListener('click', () => {
+  menu.classList.toggle('active');
+  menuToggle.classList.toggle('active');
+});
+
+const menuLinks = document.querySelectorAll('.menu a');
+
+menuLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    console.log('clicou');
+    menu.classList.remove('active');
+    menuToggle.classList.remove('active')
+  });
+});
 
 
 
